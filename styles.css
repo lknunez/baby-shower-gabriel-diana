@@ -9,7 +9,7 @@ body {
   background-color: #f7ede2;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   padding: 15px;
 }
@@ -29,6 +29,52 @@ body {
   aspect-ratio: 49 / 86;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.location-card {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #fffaf5;
+  box-shadow: 0 6px 20px rgba(92, 67, 53, 0.12);
+  color: #5c4335;
+}
+
+.location-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.location-card p {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.maps-link {
+  display: flex;
+  min-height: 44px;
+  margin: 12px 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background: #5c4335;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.maps-link:hover {
+  background: #765844;
+}
+
+.location-map {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: 12px;
 }
 
 /* Posicionamiento exacto del formulario sobre las cajas de la imagen */
@@ -124,4 +170,12 @@ body {
   width: 22px;
   height: 22px;
   fill: currentColor;
+}
+
+@media (max-width: 600px) {
+  body {
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 8px 8px 16px;
+  }
 }

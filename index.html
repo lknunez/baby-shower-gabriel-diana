@@ -39,12 +39,16 @@
         </div>
 
         <div class="input-group">
-          <select id="guests" class="custom-input custom-select" required>
-            <option value="0" selected>Iré sin acompañantes</option>
-            <option value="1">1 Acompañante</option>
-            <option value="2">2 Acompañantes</option>
-            <option value="3">3 Acompañantes</option>
-          </select>
+          <input
+            type="number"
+            id="guests"
+            class="custom-input"
+            min="0"
+            step="1"
+            placeholder="Cantidad de acompañantes"
+            aria-label="Cantidad de acompañantes"
+            required
+          >
         </div>
 
         <button type="submit" class="btn-whatsapp">
@@ -57,6 +61,25 @@
       </form>
 
     </div>
+
+    <section class="location-card" aria-labelledby="location-title">
+      <h2 id="location-title">¿Cómo llegar?</h2>
+      <p>Tomé 1101, Sede Social, Villa Humberto Díaz Casanueva, Puente Alto</p>
+      <a
+        class="maps-link"
+        href="https://www.google.com/maps/dir/?api=1&amp;destination=-33.598951523528456%2C-70.55957086741842"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Abrir en Google Maps</a>
+      <iframe
+        class="location-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1661.622414391978!2d-70.55957086741842!3d-33.598951523528456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d6f6d6e6219d%3A0x6ab7642ae0837505!2sTom%C3%A9%201101%2C%208180181%20Puente%20Alto%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1791775950552!5m2!1ses-419!2scl"
+        title="Mapa de la Sede Social de Villa Humberto Díaz Casanueva"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
   </div>
 
   <script src="script.js"></script>

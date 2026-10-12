@@ -21,7 +21,7 @@ function readRsvpData() {
   return {
     name: document.getElementById('name').value.trim(),
     status: document.getElementById('status').value,
-    guests: Number(document.getElementById('guests').value),
+    guests: document.getElementById('guests').valueAsNumber,
   };
 }
 
