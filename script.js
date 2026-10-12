@@ -1,5 +1,22 @@
 const whatsappPhone = "56949916547";
 
+// Lanzar confeti con los colores de la invitación (Azul, Rosa, Dorado, Blanco)
+function launchConfetti() {
+  if (typeof confetti === 'function') {
+    confetti({
+      particleCount: 80,
+      spread: 70,
+      origin: { y: 0.6 },
+      colors: ['#a2d2ff', '#ffafcc', '#ffd166', '#ffffff']
+    });
+  }
+}
+
+// Lanza una lluvia suave inicial cuando carga la página
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(launchConfetti, 300);
+});
+
 function readRsvpData() {
   return {
     name: document.getElementById('name').value.trim(),
@@ -27,9 +44,16 @@ function openWhatsappChat(message) {
 
 function handleRsvpSubmit(event) {
   event.preventDefault();
+  
+  // Confeti de celebración antes de redirigir a WhatsApp
+  launchConfetti();
+
   const rsvpData = readRsvpData();
   const message = buildWhatsappMessage(rsvpData);
-  openWhatsappChat(message);
+
+  setTimeout(() => {
+    openWhatsappChat(message);
+  }, 500);
 }
 
 document.getElementById('rsvpForm').addEventListener('submit', handleRsvpSubmit);
