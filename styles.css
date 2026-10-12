@@ -24,7 +24,7 @@ body {
   position: relative;
   width: 100%;
   /* Imagen de fondo limpia/plantilla */
-  background: url('babyshower.png') no-repeat center top / contain;
+  background: url('babyshower.jpg') no-repeat center top / contain;
   /* Proporción para mantener la imagen intacta en móviles y PC */
   aspect-ratio: 49 / 86;
   border-radius: 20px;

@@ -7,7 +7,7 @@ Invitación web responsiva para confirmar asistencia por WhatsApp.
 - `index.html`: contenido de la invitación y formulario RSVP.
 - `styles.css`: estilos y diseño responsivo.
 - `script.js`: generación del mensaje de confirmación de WhatsApp.
-- `babyshower.png`: imagen de fondo de la tarjeta.
+- `babyshower.jpg`: imagen de fondo de la tarjeta y miniatura para compartir.
 
 ## Publicar en Cloudflare Pages
 
